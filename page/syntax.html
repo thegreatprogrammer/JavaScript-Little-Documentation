@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<!-- Adaptación a todos los dispositivos -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Documentación JavaScript</title>
+
+	<!-- Íconos -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- Personalizando color primario y secundario
+	Fuente: Customize (getmdl.io) -->
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-orange.min.css" />
+	<!-- Tipografía
+	Fuente: Styles(getmdl.io) -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<!-- Estilos propios CSS -->
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<!-- Clase: cabecera fija -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<!-- Cabecera -->
+		<header class="main_header mdl-layout__header">
+			<!-- Fila en cabecera -->
+			<div class="mdl-layout__header-row">
+
+				<!-- Alineando contenido a la derecha -->
+				<div class="mdl-layout-spacer"></div>
+
+				<!-- Menú -->
+
+				<nav class="menu_item mdl-navigation">
+					<!-- Cada etiqueta 'a' corresponde a un ítem del menú -->
+					<a href="../index.html" class="menu_item mdl-navigation__link mdl-typography--text-uppercase">Inicio</a>
+
+					<a href="syntax.html" class="menu_item mdl-navigation__link mdl-typography--text-uppercase">Sintaxis básica</a>
+
+					<a href="control.html" class="menu_item mdl-navigation__link mdl-typography--text-uppercase">
+						Estructuras de Control
+					</a>
+
+					<a href="function.html" class="menu_item mdl-navigation__link mdl-typography--text-uppercase">
+						Funciones
+					</a>
+
+					<a href="event.html" class="menu_item mdl-navigation__link mdl-typography--text-uppercase">
+						Eventos
+					</a>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Slider -->
+
+		<div class="mdl-layout__content">
+			<div class="main_slide mdl-typography--text-center content">
+			<div class="presentation title">Sintaxis</div>
+			<div class="presentation subtitle">Fundamentos de la programación en JavaScript.</div>
+		</div>
+
+			<section class="principal">
+				<div id ="grid_content" class="mdl-grid">
+					<!-- Elsiguiente div posee las siguientes clases:
+					
+					mdl-tabs: Define el layout para tabs (pestañas) de navegación
+					mdl-js-tabs: Vincula JS para el uso de las tabs.
+					mdl-js-ripple-effect: Provee un interesante efecto Ripple al momento de clickear cualquiera de las tab 
+
+					 -->
+					<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+						<!-- 
+							mdl-tabs__tab-bar es la clase que provee la estructura de la barra de tabs.
+						 -->
+  						<div class="mdl-tabs__tab-bar">
+							<!-- mdl-tabs__tab define cada una de las tab -->
+
+  							<!-- Se añade la clase is-active al tab correspondiente; en este caso, si la ubicación del usuario es el apartado Sintaxis, este aparece marcado -->
+      						<a href="#hello_world" class="mdl-tabs__tab is-active">¡Hola, mundo!</a>
+      						<a href="#var" class="mdl-tabs__tab">Variables</a>
+      						<a href="#data_type" class="mdl-tabs__tab">Tipos de datos</a>
+      						<a href="#operator" class="mdl-tabs__tab">Operadores</a>
+  						</div>
+
+	  					<div class="mdl-tabs__panel is-active" id="hello_world">
+							<a name="hello_world"></a>
+
+							<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--3dp">
+								<div class="mdl-card__title">
+									<h4 class="mdl-card__title-text">
+										Primeros pasos en JavaScript
+									</h4>
+								</div>
+
+								<div class="mdl-card__text">
+
+									<span class="mdl-typography--font-light">
+										Los programas JavaScript pueden ser insertados en un documento HTML con ayuda de la etiqueta <code>&#60script></code>
+									</span>
+									<br><br>
+
+									<span class="mdl-typography--font-light">
+										La manera más recomendada de trabajar con JavaScript es alojando el código en un archivo externo, lo cual se logra colocando la siguiente línea de código: <br> <code>&#60script></code>
+									</span>
+									<br><br>
+
+									<span class="mdl-typography--font-light">
+										JavaScript es un lenguaje interpretado, no compilado. Significa que sólo se necesita el bloc de notas para programar un archivo .js, y vincularlo a una página para ver los resultados en un navegador.
+									</span>
+									<br><br>
+
+									<span class="mdl-typography--font-light">
+										Aunque no es imprescindible, es una buena práctica que los enunciados terminen en un punto y coma (;). Si éste no existe, el intérprete de JavaScript considerará un salto de línea como el final de un enunciado
+									</span>
+									<br><br>
+
+									<span class="mdl-typography--font-light">
+										La sintaxis de los comentarios depende del número de líneas:
+									</span>
+
+									<!-- Las clases: code, comment, reserved, se utilizan por motivos de estética: proveen el fondo, colores de las palabras reservadas y comentarios. -->
+									<div class="code">
+										<code class="comment">//...esto es un comentario de una línea <br><br>
+							/*..esto es un comentario multilínea*/
+										</code>
+									</div>
+	    							<br><br>
+
+								<span class="mdl-typography--font-light">
+									Los bloques de código son un conjunto de enunciados que deben interpretarse como una secuencia completa —como por ejemplo una función—. Se indican con llaves ({}).
+								</span>
+							</div>	
+						</div>
+					</div>
+  				
+					<div class="mdl-tabs__panel" id="var">
+						<a name="var"></a>
+						<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--3dp">
+							<!-- Título -->
+							<div class="mdl-card__title">
+								<h4 class="mdl-card__title-text">
+									Variables
+								</h4>
+							</div>
+
+							<!-- Texto -->
+							<div class="mdl-card__text">
+								<span class="mdl-typography--font-light">
+									Originalmente, en Javascript solo existía una forma de declarar variables. Se hacía con la palabra clave "var" seguida del nombre de variable a declarar (o variables separadas por comas). 
+								</span>
+
+								<div class="code">
+									<code><span class="reserved">var</span> variable;</code>
+								</div>
+
+								<span class="mdl-typography--font-light">
+									Esta variable podía ser de ámbito global o local. Su ámbito depende del lugar donde se declara pero las posiblidades eran bien limitadas. Para hacer una variable global la teníamos que declarar simplemente fuera del cuerpo de una función. En cambio, las variables locales eran declaradas dentro de una función y solo eran accesibles dentro del código de esa función.
+								</span>
+								<br><br>
+
+								<span class="mdl-typography--font-light">
+									Para solucionar todo esto en Javascript ES6 se ha implementado alguna forma nueva de declarar variables que ahora será la más indicada en la mayoría de los casos. Se trata de la construcción "let".
+								</span>
+								<br><br>
+
+								<span class="mdl-typography--font-light">
+									La clave de let es que restringe su existencia al ámbito donde ha sido declarada (cualquier ámbito expresado con unas llaves). 
+								</span>
+
+								<div class="code">
+									<code><span class="reserved">let</span> newVar = 150;</code>
+								</div>
+								<br><br>
+
+								<span class="mdl-typography--font-light">
+									Otra nueva forma de crear variables es "const". Ésto nos crea una variable donde su valor es inalterable a lo largo del código.
+								</span>
+								<br><br>
+
+								<span class="mdl-typography--font-light">
+									Por convección se acostumbra a definir en mayúscula los nombres de las constantes, para una mejor identificación
+								</span>
+
+								<div class="code">
+									<code><span class="reserved">const</span> NEW = 10;</code>
+								</div>
+								 
+							</div>
+						</div>
+				  	</div>
+
+				  	<div class="mdl-tabs__panel" id="data_type">
+						<a name="data_type"></a>
+						<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--3dp">
+							<div class="mdl-card__title">
+								<h4 class="mdl-card__title-text">
+											Tipos de datos
+								</h4>
+							</div>
+							<div class="mdl-card__text">
+								<span class="mdl-typography--font-light">
+								Javascript es un lenguaje con tipado débil dinámico, es decir, las variables no tienen un tipo específico y es posible comparar datos de diferentes tipos produciéndose la conversión implícita de los valores al realizar la comparación.</span>
+								<br><br>
+								<span class="mdl-typography--font-light">
+								Es posible utilizar typeof, una instrucción pensada de forma específica para conocer el tipo del valor de una variable. Funciona perfectamente con los tipos primitivos y con las funciones.</span>
+								<br><br>
+								<div class="code">
+									<code>console.<span class="reserved">assert</span>(typeof <span class="reserved">true</span> === <span class="cadena">'boolean'</span>);</code>
+								</div>
+								<div class="mdl-card__title">
+								<h4 class="mdl-card__title-text">
+									Tipos primitivos
+								</h4>
+								<hr>
+								</div>
+								<br>
+								<span class="mdl-typography--font-light">
+									Javascript tiene seis tipos primitivos: Sin definir <b>(undefined)</b>, Nulo <b>(null)</b>, Lógicos <b>(boolean)</b>, Numérico <b>(number)</b>, Cadena <b>(string)</b>, Símbolo <b>(symbol)</b>. Todos los demás tipos son objetos <b>(Object)</b>: Array, Date, Promise, etc.
+								</span>
+							</div>
+						</div>
+				  </div>
+
+
+			  	<div class="mdl-tabs__panel" id="operator">
+					<a name="operator"></a>
+					<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--3dp">
+						<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">
+								Operadores
+							</h4>
+						</div>
+						<div class="mdl-card__text">
+							<span class="mdl-typography--font-light">
+								Los operadores son símbolos con los que, como su nombre indica, se pueden realizar operaciones con variables, valores constantes o variables y valores constantes. Hay muchos tipos de operadores, pero para esta introducción voy a centrarme en los más comunes:
+							</span>
+							<br><br>
+							<span class="mdl-typography--font-light">
+								Los operadores son símbolos con los que, como su nombre indica, se pueden realizar operaciones con variables, valores constantes o variables y valores constantes. Hay muchos tipos de operadores, pero para esta introducción voy a centrarme en los más comunes:
+							</span>
+							<span class="mdl-typography--font-light">
+								<ul>
+									<li>Operadores aritméticos</li>
+									<li>Operadores comparativos</li>
+									<li>Operadores lógicos</li>
+								</ul>
+							</span>
+
+							<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">
+								Aritméticos
+							</h4>
+							</div>
+							<br>
+							<span class="mdl-typography--font-light">
+								Los operadores aritméticos son: adición, sustracción, multiplicación, división, módulo.
+							</span>
+
+							<br>
+							<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">
+								Comparativos
+							</h4>
+							</div>
+							<br>
+							<span class="mdl-typography--font-light">
+								Como su nombre indica, estos operadores se emplean para realizar comparaciones entre los valores de las variables. Destacan los símbolos > (mayor que), < (menor que), == (igual a), != (distinto de), >= (mayor o igual a), <= (menor o igual a), === (idéntico a).
+							</span>
+
+							<br>
+							<div class="mdl-card__title">
+							<h4 class="mdl-card__title-text">
+								Lógicos
+							</h4>
+							</div>
+							<br>
+							<span class="mdl-typography--font-light">
+								Los operadores lógicos amplian las posibilidades de establecer condiciones. Se presenta el operador de negación (!), operador "y" (&&), operador "o" (||).
+							</span>
+						</div>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</section>
+</div>
+</div>
+
+
+
+	<!-- Importando el script MDL
+	Fuente: Getting Started (getmdl.io) -->
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+</html>

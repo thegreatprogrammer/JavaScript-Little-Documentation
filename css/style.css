@@ -1,0 +1,156 @@
+.main_header{
+	background-color: black;
+	border-bottom: 1px solid orange;
+}
+
+.main_header_img{
+	height:60px;
+	width:170px;
+}
+
+.menu_item{
+	font-weight: bold;
+}
+
+.menu_item .mdl-navigation__link:hover{
+	color: orange;
+}
+
+.main_slide{
+	background: url("../images/slide.jpg") center no-repeat;
+	background-size: cover;
+	height:500px;
+	width:100%;
+}
+
+.title{
+	font-size:70px;
+	padding-top:100px;
+}
+
+.subtitle{
+	font-size:30px;
+	padding-top:130px;
+}
+
+.presentation{
+	color:white;
+	text-shadow: 2px 3px rgba(0,0,0,0.7);
+	font-weight: bold;
+	line-height: 1;
+}
+
+.principal{
+	position:relative;
+	padding:8px 0;
+	max-width: 1044px;
+	margin:0 auto;
+}
+
+.mdl-card__media{
+	overflow:hidden;
+	max-width: 100%;
+}
+
+.mdl-card__media:hover{
+	transition: all .9s ease;
+	transform: scale(1.05);
+}
+
+
+.mdl-card__media > img{
+	max-width: 100%;
+}
+
+
+#grid_content.mdl-card__media{
+	overflow: hidden;
+	background:transparent;
+}
+
+/*#grid_content.mdl-card__media img{
+	width:100%;
+}*/
+
+.principal{
+	padding:36px 0;
+	text-align:center;
+}
+
+
+.mdl-typography--font-light{
+	margin:1em;
+}
+
+.mdl-card__title-text{
+	text-align: center;
+}
+
+.mdl-card__title{
+	border-bottom: 0.8px solid lightgray;
+}
+
+
+.mdl-card__supporting-text{
+	margin:1em;
+}
+
+.mdl-button{
+	background-color: black;
+	color:white;
+	border:1px solid orange;
+	border-radius:5px;
+	transition: all 1s ease;
+}
+
+.mdl-button:hover{
+	color:orange;
+	background-color: black;
+	transform:scale(1.20);
+}
+
+.mdl-card__text{
+	text-align: justify;
+	margin:1em;
+}
+
+.reserved{
+	color:#00FF1E;
+}
+
+.code{
+	background-color: #000F26;
+	color:white;
+	margin:1em;
+	padding:1em;
+	border-radius:5px;
+	font-size:18px;
+}
+
+.cadena{
+	color:yellow;
+}
+
+.comment{
+	color:lightgray;
+}
+
+#code {
+  background: url('../images/2.jpg') center / cover;
+}
+
+.demo-card-image{
+	width: 100%;
+ 	margin-top:1em;
+  	margin-bottom: 1em;
+}
+
+.demo-card-image > .mdl-card__actions {
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
